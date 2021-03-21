@@ -6,7 +6,7 @@
     height: 20px;
     float: left;
     margin: 1px;
-    border: 1px solid #ddd;
+    border: 2px solid #ddd;
     border-radius: 4px;
     background-color: #fff;
     transition: background-color .5s;
