@@ -47,13 +47,10 @@
     const lol = new Car(4, "red", "v12", "smth")  
     lol.log() */
 
-    //if u see this text, know i'm working about code here and ik i copied html and css, it's boring to do html and css, but i will do my js
+    //if u see this text, know i'm working about code here and ik i copied html and css, it's boring to do html and css
 
 
-    /* function Snake(width, height, length, current, dx, dy, x, y, hasFood, newEl) {
-       
     
-    } */
 
     (function(width, height, length, current, dx, dy, x, y, hasFood, newEl){     
     
@@ -66,7 +63,7 @@
             y = (y + dy) < 0 ? height - 1 : (y + dy) % height;
             newEl = document.getElementsByClassName(y + '_' + x)[0]
             if(newEl.className.indexOf('s') > 0) {
-                clearInterval(timer), alert('Game Over! Score: ' + length)
+                clearInterval(timer), alert('U lose! Score: ' + length)
             };
             if(newEl.className.indexOf('f') > 0) {
                 newEl.className = newEl.className.replace(' f', ''), length++, hasFood = false;

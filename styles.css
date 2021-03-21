@@ -1,21 +1,25 @@
+body {
+    background-color: gray;
+}
+
 .main .line {
     clear: both;
 }
 .main .line div {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     float: left;
     margin: 1px;
-    border: 2px solid #ddd;
+    border: 2px solid rgb(163, 163, 167);
     border-radius: 4px;
     background-color: #fff;
     transition: background-color .5s;
 }
 .main .line div.s {
-    background-color: #bbb;
+    background-color: rgb(41, 39, 39);
     transition: background-color .5s;
 }
 .main .line div.f {
-    background-color: green;
+    background-color: rgb(134, 6, 6);
     transition: background-color 2s;
 }
