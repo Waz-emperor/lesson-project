@@ -59,8 +59,8 @@
         };
             
         var timer = setInterval(function () {
-            x = (x + dx) < 0 ? width - 1 : (x + dx) % width; 
-            y = (y + dy) < 0 ? height - 1 : (y + dy) % height;
+            x = (x + dx) < 0 ? width - 2 : (x + dx) % width; 
+            y = (y + dy) < 0 ? height - 2 : (y + dy) % height;
             newEl = document.getElementsByClassName(y + '_' + x)[0]
             if(newEl.className.indexOf('s') > 0) {
                 clearInterval(timer), alert('U lose! Score: ' + length)
@@ -81,5 +81,5 @@
                     hasFood = true, document.getElementsByClassName(fY + '_' + fX)[0].className += ' f';
         }, 1000);
         
-        })(10, 10, 5, 1, 1, 0, 0, 0, false, null);
+        })(10, 10, 3, 1, 1, 0, 0, 0, false, null);
     
