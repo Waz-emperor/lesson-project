@@ -1,10 +1,5 @@
 
 
- 
-
-
-    
-
     (function(width, height, length, current, dx, dy, x, y, hasFood, newEl){     
     
         document.body.onkeydown = function(e){
@@ -39,7 +34,7 @@
         var x;
         var startstop = 0;
         
-        function startStop() { /* Toggle StartStop */
+        function startStop() { 
         
           startstop = startstop + 1;
         
@@ -59,30 +54,29 @@
         
         function start() {
           x = setInterval(timer, 10);
-        } /* Start */
+        } 
         
         function stop() {
           clearInterval(x);
-        } /* Stop */
+        } 
         
         var milisec = 0;
-        var sec = 0; /* holds incrementing value */
+        var sec = 0;
         var min = 0;
         var hour = 0;
         
-        /* Contains and outputs returned value of  function checkTime */
+       
         
         var miliSecOut = 0;
         var secOut = 0;
         var minOut = 0;
         var hourOut = 0;
         
-        /* Output variable End */
+     
         
         
         function timer() {
-          /* Main Timer */
-        
+       
         
           miliSecOut = checkTime(milisec);
           secOut = checkTime(sec);
@@ -115,9 +109,7 @@
         
         }
         
-        
-        /* Adds 0 when value is <10 */
-        
+          
         
         function checkTime(i) {
           if (i < 10) {
@@ -129,7 +121,7 @@
         function reset() {
         
         
-          /*Reset*/
+    
         
           milisec = 0;
           sec = 0;
