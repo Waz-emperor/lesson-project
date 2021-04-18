@@ -31,3 +31,19 @@ body {
     font-size: 2em;
     color: rgb(189, 185, 185);
 }
+
+.startsc {
+    position: fixed;
+    
+    width: 460px;
+    height: 460px;
+    background-color: black;
+    margin-block: 1px auto;
+    z-index: 11;
+}
+
+.loadbtn {
+    width: 460px;
+    height: 460px;
+    font-size: 4em;
+}

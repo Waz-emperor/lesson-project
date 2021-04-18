@@ -134,7 +134,16 @@
           document.getElementById("hour").innerHTML = "00";
         
         }
-      
+
+
+        function myFunction() {
+            var x = document.getElementById("stsc");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+            } else {
+              x.style.display = "none";
+            }
+          }
    /*   class snake {
 
         
@@ -184,4 +193,3 @@
          */
         //it does't work
      
-        
